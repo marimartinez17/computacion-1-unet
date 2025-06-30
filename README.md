@@ -1,1 +1,1 @@
-# Repositorio para almacenar practicas de lenguaje C.
+Repositorio para almacenar practicas de lenguaje C.
