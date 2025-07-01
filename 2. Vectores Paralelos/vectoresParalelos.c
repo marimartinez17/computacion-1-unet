@@ -38,7 +38,7 @@ int main()
     promedioDiciembre=acumuladorNoviembre/4;
 
     char estacionMayorContaminacion[30],estacionMenorContaminacion[30];
-    float contaminacionMayor=0, contaminacionMenor=999, auxiliar;
+    float contaminacionMayor=0, contaminacionMenor=999;
 
     //Determinar estacion con nivel mas bajo de contaminacion
     for(i=0;i<4;i++){
