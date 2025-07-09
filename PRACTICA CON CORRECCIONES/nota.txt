@@ -1,0 +1,1 @@
+Mejoras realizadas a la practica evaluada. Se ajustó el color al momento de imprimir y se añadió la trasnformación de cadenas de texto a letras mayúsculas.
