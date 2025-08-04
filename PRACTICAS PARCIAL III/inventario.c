@@ -16,7 +16,7 @@ void menu(int cantidad, char ID[][11], char nombre[][30],float precio[], int sto
 
         // Desplegar opciones
 
-        printf("------------ MENU PRINCIPAL --------------\n");
+        printf("------------ MENÚ PRINCIPAL --------------\n");
         printf("1. AGREGAR PRODUCTO\n");
         printf("2. MOSTRAR INVENTARIO\n");
         printf("3. BUSCAR PRODUCTO\n");
@@ -25,7 +25,7 @@ void menu(int cantidad, char ID[][11], char nombre[][30],float precio[], int sto
         printf("6. SALIR\n");
 
         do{
-            printf("Ingrese la opcion que desea realizar: ");
+            printf("Ingrese la opción que desea realizar: ");
             scanf(" %d", &respuesta);
         } while (respuesta < 1 || respuesta > 6);
 
@@ -91,7 +91,7 @@ void agregarProducto(int cantidad, char ID[][11], char nombre[][30],float precio
             scanf(" %d", &stock[i]);
 
             do {
-                printf("Ingrese la categoria: ");
+                printf("Ingrese la categoría: ");
                 scanf(" %[^\n]", categoria[i]);
             } while (strlen(categoria[i]) == 0);
 
@@ -177,7 +177,7 @@ void calcularTotal(int cantidad, float ganancia[]){
         }
         printf("Total del inventario: %.2f\n", totalInventario);
 
-        printf("\nPara regresar al menu ingrese 0: ");
+        printf("\nPara regresar al menú ingrese 0: ");
         scanf(" %d", &respuesta);
 
     } while (respuesta != 0);
@@ -196,7 +196,7 @@ void mostrarInventario(int cantidad, char ID[][11], char nombre[][30], int stock
 
         printf("\n=====================================================================================================================\n");
         printf("| %-10s | %-30s | %-25s | %-6s | %-14s | %-14s |\n",
-        "ID", "NOMBRE", "CATEGORIA", "STOCK", "PRECIO", "GANANCIA");
+        "ID", "NOMBRE", "CATEGORÍA", "STOCK", "PRECIO", "GANANCIA");
         printf("---------------------------------------------------------------------------------------------------------------------\n");
 
         for (int i=0; i < cantidad; i++){
@@ -204,7 +204,7 @@ void mostrarInventario(int cantidad, char ID[][11], char nombre[][30], int stock
         }
         printf("=====================================================================================================================\n\n");
 
-        printf("\nPara regresar al menu ingrese 0: ");
+        printf("\nPara regresar al menú ingrese 0: ");
         scanf(" %d", &respuesta);
 
     } while (respuesta != 0);
@@ -214,6 +214,7 @@ void mostrarInventario(int cantidad, char ID[][11], char nombre[][30], int stock
 
 int main()
 {
+    setlocale(LC_ALL, "");
     int cantidad;
 
     //Solicitar cantidad de productos al usuario
