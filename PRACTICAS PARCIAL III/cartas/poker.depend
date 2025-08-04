@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1754344703 source:c:\users\admin\onedrive\escritorio\parcial iii\poker\poker.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<string.h>
+	"poker.h"
+
+1754343987 c:\users\admin\onedrive\escritorio\parcial iii\poker\poker.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	<ctype.h>
+
