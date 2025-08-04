@@ -101,13 +101,14 @@ void agregarProducto(int cantidad, char ID[][11], char nombre[][30],float precio
 
             //Calcular ganancia de cada producto
 
-            ganancia[i]= precio[i] * stock [i];
+            ganancia[i] = precio[i] * stock [i];
 
             system("CLS");
 
         }
 }
 
+// Funcion para consultar productos por ID
 void buscarProducto(int cantidad, char ID[][11], char nombre[][30], float precio[], int stock[], char categoria[][30]){
     char respuesta, buscador[30];
     int bandera = 0;
@@ -163,6 +164,7 @@ void aplicarDescuentos(int cantidad, char categoria[][30], float precio[], int s
     system("CLS");
 }
 
+// Calcular y mostrar total de ganancias
 void calcularTotal(int cantidad, float ganancia[]){
 
     int respuesta;
@@ -214,6 +216,7 @@ int main()
 {
     int cantidad;
 
+    //Solicitar cantidad de productos al usuario
     do {
         printf("Ingrese la cantidad de productos que desea registrar: ");
         scanf(" %d", &cantidad);
@@ -221,10 +224,12 @@ int main()
 
     system("CLS");
 
+    // Declaracion de arrays
     char ID[cantidad][11], nombre[cantidad][30], categoria[cantidad][30];
     int stock[cantidad];
     float precio[cantidad], ganancia[cantidad];
 
+    // Llamado de la funcion menu
     menu(cantidad,ID,nombre,precio,stock,categoria,ganancia);
 
     return 0;
