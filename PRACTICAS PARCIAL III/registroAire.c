@@ -156,6 +156,7 @@ void buscarRegistros(struct RegistroAire *Registros, int tamano, int horas[]){
 
 int main()
 {
+    setlocale(LC_ALL,"");
     srand(time(NULL));
 
     int size = 4, horas[4] = {0,6,12,18}; //Horas en las que se realizaran los registros
